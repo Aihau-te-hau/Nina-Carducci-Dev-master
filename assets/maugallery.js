@@ -111,6 +111,7 @@
     responsiveImageItem(element) {
       if (element.prop("tagName") === "IMG") {
         element.addClass("img-fluid");
+        element.css('cursor', 'pointer');
       }
     },
     openLightBox(element, lightboxId) {
@@ -204,13 +205,13 @@
                         <div class="modal-body">
                             ${
                               navigation
-                                ? '<div class="mg-prev" style="cursor:pointer;position:absolute;top:50%;left:-15px;background:white;"><</div>'
+                                ? '<div class="mg-prev" style="cursor:pointer;position:absolute;top:50%;left:10px;background:rgba(255,255,255,0.8);z-index:10;"><</div>'
                                 : '<span style="display:none;" />'
                             }
-                            <img class="lightboxImage img-fluid" alt="Contenu de l'image affichée dans la modale au clique"/>
+                            <img class="lightboxImage img-fluid" alt="Contenu de l\'image affichée dans la modale au clique"/>
                             ${
                               navigation
-                                ? '<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;">></div>'
+                                ? '<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:10px;background:rgba(255,255,255,0.8);z-index:10;">></div>'
                                 : '<span style="display:none;" />'
                             }
                         </div>
