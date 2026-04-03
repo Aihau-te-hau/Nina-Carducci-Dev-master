@@ -253,6 +253,10 @@ p.quote__text {
 	font-size: 2.5em;
 }
 
+.img-fluid:hover {
+	cursor: pointer;
+}
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;

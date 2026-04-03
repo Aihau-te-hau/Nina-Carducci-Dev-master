@@ -111,7 +111,6 @@
     responsiveImageItem(element) {
       if (element.prop("tagName") === "IMG") {
         element.addClass("img-fluid");
-        element.css('cursor', 'pointer');
       }
     },
     openLightBox(element, lightboxId) {
